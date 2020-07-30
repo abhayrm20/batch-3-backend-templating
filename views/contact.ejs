@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+<!-- Contact Section  -->
+<div class="contact container">
+  <h2>Contact</h2>
+
+  <form class="" action="/contact" method="post">
+
+    <!-- Name textfield -->
+    <label for="name">Name: </label>
+    <input type="text" name="name" value="" id="name" placeholder="Enter your name" required /><br>
+
+    <!-- Email textfield -->
+    <label for="email">Email: </label>
+    <input type="email" name="email" value="" id="email" required /><br>
+
+    <!-- Subject textfield -->
+    <label for="subject">Subject: </label>
+    <input type="text" name="subject" value="" id="subject" required /><br>
+
+    <!-- Subject textfield -->
+    <label for="message">Message: </label><br>
+    <textarea name="message" id="message" rows="8" cols="80" required></textarea><br><br>
+
+    <input type="submit" value="Send"><br><br><br><br><br>
+
+  </form>
+
+</div>
+<%- include('partials/footer') %>

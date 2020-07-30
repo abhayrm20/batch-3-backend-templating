@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="container p-5">
+  <form class="" action="/add-profile" method="post">
+
+    <h3>Create your portfolio</h3>
+
+    <input type="text" class="form-control" name="name" placeholder="Enter your name"> <br>
+    <input type="email" class="form-control" name="email" placeholder="Enter your email"> <br>
+    <input type="text" class="form-control" name="img" placeholder="Enter URL for your profile picture"> <br>
+    <input type="text" class="form-control" name="position" placeholder="Enter your position"> <br>
+    <input type="text" class="form-control" name="company" placeholder="Enter your company / organisation"> <br>
+    <input type="text" class="form-control" name="companyurl" placeholder="Enter your company / organisation website"> <br>
+    <div class="text-right">
+      <button type="submit" name="button" class="btn btn-md btn-outline-primary"> Submit </button>
+
+    </div>
+
+  </form>
+</div>
+
+
+<%- include('partials/footer') %>

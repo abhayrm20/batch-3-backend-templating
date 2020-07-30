@@ -1,0 +1,75 @@
+<%- include('partials/header') %>
+
+<!-- Profile section -->
+<div class="section profile" id="main-section">
+  <img class="profile-img" src="<%= img %>" alt="Profile photo" />
+  <h1 class="profile-name"><%= name %></h1>
+  <p>
+    <%= position %> at
+    <a href="<%= companyurl %>" target="_blank"><%= company %></a>
+  </p>
+  <button type="button" name="button" class="btn btn-primary">
+    Learn more
+  </button>
+</div>
+
+<div class="section achievements">
+  <div class="container">
+    <!-- Achievements section -->
+
+    <h2>Achievements</h2>
+    <ol>
+      <% for (var i = 0; i < achievementsList.length; i++) { %>
+
+        <li>
+          <%= achievementsList[i] %>
+        </li>
+
+      <% } %>
+
+    </ol>
+  </div>
+</div>
+
+<!-- Skill section -->
+<div class="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Skill 1</li>
+    <li>Skill 2</li>
+    <li>Skill 3</li>
+  </ul>
+</div>
+
+<!-- Education section -->
+<div class="education">
+  <h2>Education</h2>
+  <table cellspacing="20px">
+    <tr>
+      <td>School</td>
+      <td>
+        <small><b>JNV Bangalore </b> | 2010-2017</small><br />
+        I did my schooling here and I learnt a lot of things. <br />
+        CGPA: 9.2
+      </td>
+    </tr>
+    <tr>
+      <td>Bachelors</td>
+      <td>SVCE Bangalore | 2017 - Present</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Career section -->
+<div class="career">
+  <h2>Experiences</h2>
+  <ul>
+    <li>Work 1</li>
+    <li>Work 2</li>
+    <li>Work 3</li>
+  </ul>
+</div>
+
+<a href="contact.html">Contact</a>
+
+<%- include('partials/footer') %>
